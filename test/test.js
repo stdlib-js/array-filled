@@ -330,7 +330,7 @@ tape( 'the function throws an error if not provided a length, typed array, array
 	var i;
 
 	filledarray = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport
 	});
 
 	values = [
@@ -365,7 +365,7 @@ tape( 'the function throws an error if not provided a length, typed array, array
 	var i;
 
 	filledarray = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport
 	});
 
 	values = [
@@ -400,8 +400,8 @@ tape( 'the function throws an error if not provided a valid iterable when attemp
 	var i;
 
 	filledarray = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__ITERATOR_SYMBOL__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__ITERATOR_SYMBOL__'
 	});
 
 	values = [
@@ -440,8 +440,8 @@ tape( 'the function throws an error if not provided a valid iterable when attemp
 	var i;
 
 	filledarray = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__ITERATOR_SYMBOL__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__ITERATOR_SYMBOL__'
 	});
 
 	values = [
