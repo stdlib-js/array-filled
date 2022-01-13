@@ -60,7 +60,7 @@
     "@stdlib/array-int16": "^0.0.x",
     "@stdlib/array-int32": "^0.0.x",
     "@stdlib/array-int8": "^0.0.x",
-    "@stdlib/array-typed-dtypes": "^0.0.x",
+    "@stdlib/array-typed-real-dtypes": "^0.0.x",
     "@stdlib/array-uint16": "^0.0.x",
     "@stdlib/array-uint32": "^0.0.x",
     "@stdlib/array-uint8": "^0.0.x",
