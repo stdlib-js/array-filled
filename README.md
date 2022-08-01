@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-filled
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
+var filledarray = require( '@stdlib/array-filled' );
 ```
 
 #### filledarray( \[dtype] )
@@ -114,7 +130,7 @@ var arr3 = filledarray( 3, arr1, 'int32' );
 Creates a filled array from an iterable.
 
 ```javascript
-import iterConstant from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-constant@deno/mod.js';
+var iterConstant = require( '@stdlib/iter-constant' );
 
 var it = iterConstant( 3.0, {
     'iter': 3
@@ -131,7 +147,7 @@ var arr2 = filledarray( 1.0, it, 'float32' );
 Returns a filled [typed array][mdn-typed-array] view of an [`ArrayBuffer`][mdn-arraybuffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var buf = new ArrayBuffer( 32 );
 var arr = filledarray( 1.0, buf );
@@ -183,9 +199,9 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real-dtypes@deno/mod.js';
-import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var dtypes = require( '@stdlib/array-typed-real-dtypes' );
+var filledarray = require( '@stdlib/array-filled' );
 
 // Generate a random number:
 var r = discreteUniform( 0, 100 );
@@ -237,7 +253,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -267,8 +283,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-filled.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-filled
 
-[test-image]: https://github.com/stdlib-js/array-filled/actions/workflows/test.yml/badge.svg
-[test-url]: https://github.com/stdlib-js/array-filled/actions/workflows/test.yml
+[test-image]: https://github.com/stdlib-js/array-filled/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-filled/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-filled/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-filled?branch=main
@@ -280,19 +296,20 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/array-filled/tree/deno
-[umd-url]: https://github.com/stdlib-js/array-filled/tree/umd
-[esm-url]: https://github.com/stdlib-js/array-filled/tree/esm
-
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[umd]: https://github.com/umdjs/umd
+[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+[deno-url]: https://github.com/stdlib-js/array-filled/tree/deno
+[umd-url]: https://github.com/stdlib-js/array-filled/tree/umd
+[esm-url]: https://github.com/stdlib-js/array-filled/tree/esm
+[branches-url]: https://github.com/stdlib-js/array-filled/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-filled/main/LICENSE
 
@@ -304,7 +321,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/deno
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
 <!-- </related-links> -->
 
