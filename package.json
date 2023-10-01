@@ -75,7 +75,7 @@
     "@stdlib/complex-float64": "^0.1.0",
     "@stdlib/iter-constant": "^0.1.0",
     "@stdlib/math-base-special-pow": "^0.1.0",
-    "@stdlib/random-base-discrete-uniform": "^0.0.6",
+    "@stdlib/random-base-discrete-uniform": "^0.1.0",
     "@stdlib/strided-base-reinterpret-complex128": "^0.1.0",
     "@stdlib/strided-base-reinterpret-complex64": "^0.1.0",
     "proxyquire": "^2.0.0",
