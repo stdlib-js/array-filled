@@ -45,30 +45,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-filled
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var filledarray = require( '@stdlib/array-filled' );
+filledarray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var filledarray = require( 'path/to/vendor/umd/array-filled/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.filledarray;
+})();
+</script>
 ```
 
 #### filledarray( \[dtype] )
@@ -209,10 +217,15 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
-var dtypes = require( '@stdlib/array-typed-real-dtypes' );
-var filledarray = require( '@stdlib/array-filled' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real-dtypes@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Generate a random number:
 var r = discreteUniform( 0, 100 );
@@ -227,6 +240,11 @@ for ( i = 0; i < dt.length; i++ ) {
     arr = filledarray( r, 10, dt[ i ] );
     console.log( arr );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -333,9 +351,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/filled-by]: https://github.com/stdlib-js/array-filled-by
+[@stdlib/array/filled-by]: https://github.com/stdlib-js/array-filled-by/tree/umd
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/umd
 
 <!-- </related-links> -->
 
