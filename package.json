@@ -70,7 +70,6 @@
     "@stdlib/assert-is-array": "^0.1.1",
     "@stdlib/assert-is-typed-array": "^0.1.0",
     "@stdlib/assert-is-typed-array-like": "^0.1.0",
-    "@stdlib/bench": "^0.2.1",
     "@stdlib/complex-float32": "^0.1.1",
     "@stdlib/complex-float64": "^0.1.1",
     "@stdlib/iter-constant": "^0.1.0",
@@ -81,7 +80,8 @@
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.1.2"
   },
   "engines": {
     "node": ">=0.10.0",
