@@ -39,6 +39,7 @@
   "dependencies": {
     "@stdlib/array-base-filled": "^0.1.0",
     "@stdlib/array-ctors": "^0.1.0",
+    "@stdlib/array-defaults": "^0.1.0",
     "@stdlib/assert-has-iterator-symbol-support": "^0.1.1",
     "@stdlib/assert-is-arraybuffer": "^0.1.1",
     "@stdlib/assert-is-collection": "^0.1.0",
