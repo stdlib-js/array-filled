@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
+import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@v0.2.0-esm/index.mjs';
 ```
 
 #### filledarray( \[dtype] )
@@ -201,7 +201,7 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real-dtypes@esm/index.mjs';
-import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
+import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@v0.2.0-esm/index.mjs';
 
 // Generate a random number:
 var r = discreteUniform( 0, 100 );
