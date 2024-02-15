@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-filled/tags). For example,
+
+```javascript
 import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@v0.2.0-deno/mod.js';
 ```
 
@@ -196,7 +201,7 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real-dtypes@deno/mod.js';
-import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@v0.2.0-deno/mod.js';
+import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
 
 // Generate a random number:
 var r = discreteUniform( 0, 100 );
