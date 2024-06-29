@@ -37,6 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-base-assert-is-boolean-data-type": "^0.0.1",
+    "@stdlib/array-base-assert-is-complex-floating-point-data-type": "^0.2.1",
     "@stdlib/array-base-filled": "^0.2.1",
     "@stdlib/array-ctors": "^0.2.1",
     "@stdlib/array-defaults": "^0.2.1",
@@ -49,12 +51,14 @@
     "@stdlib/assert-is-string": "^0.2.1",
     "@stdlib/blas-ext-base-gfill": "^0.2.1",
     "@stdlib/iter-length": "^0.2.1",
+    "@stdlib/strided-base-reinterpret-boolean": "^0.0.1",
     "@stdlib/string-format": "^0.2.1",
     "@stdlib/symbol-iterator": "^0.2.1",
     "@stdlib/types": "^0.3.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
+    "@stdlib/array-bool": "^0.0.1",
     "@stdlib/array-buffer": "^0.2.1",
     "@stdlib/array-complex128": "^0.2.1",
     "@stdlib/array-complex64": "^0.2.1",
@@ -72,8 +76,8 @@
     "@stdlib/assert-is-array": "^0.2.1",
     "@stdlib/assert-is-typed-array": "^0.2.1",
     "@stdlib/assert-is-typed-array-like": "^0.2.1",
-    "@stdlib/complex-float32-ctor": "github:stdlib-js/complex-float32-ctor#main",
-    "@stdlib/complex-float64-ctor": "github:stdlib-js/complex-float64-ctor#main",
+    "@stdlib/complex-float32-ctor": "^0.0.1",
+    "@stdlib/complex-float64-ctor": "^0.0.1",
     "@stdlib/iter-constant": "^0.2.1",
     "@stdlib/math-base-special-pow": "^0.2.1",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
