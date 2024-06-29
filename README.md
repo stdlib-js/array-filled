@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2020 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ limitations under the License.
   <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
 </details>
 
-# Filled Array
+# filledarray
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -45,41 +45,44 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-filled
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
+var filledarray = require( '@stdlib/array-filled' );
 ```
 
 #### filledarray( \[dtype] )
 
-Creates a filled array having a specified data type `dtype`.
+Creates a filled array having a specified [data type][@stdlib/array/dtypes] `dtype`.
 
 ```javascript
 var arr = filledarray();
 // returns <Float64Array>
 ```
 
-The function recognizes the following data types:
-
--   `float64`: double-precision floating-point numbers (IEEE 754)
--   `float32`: single-precision floating-point numbers (IEEE 754)
--   `complex128`: double-precision complex floating-point numbers
--   `complex64`: single-precision complex floating-point numbers
--   `int32`: 32-bit two's complement signed integers
--   `uint32`: 32-bit unsigned integers
--   `int16`: 16-bit two's complement signed integers
--   `uint16`: 16-bit unsigned integers
--   `int8`: 8-bit two's complement signed integers
--   `uint8`: 8-bit unsigned integers
--   `uint8c`: 8-bit unsigned integers clamped to `0-255`
--   `generic`: generic JavaScript values
-
-By default, the output array data type is `float64` (i.e., a [typed array][mdn-typed-array]). To specify an alternative data type, provide a `dtype` argument.
+By default, the output array [data type][@stdlib/array/dtypes] is `float64` (i.e., a [typed array][mdn-typed-array]). To specify an alternative [data type][@stdlib/array/dtypes], provide a `dtype` argument.
 
 ```javascript
 var arr = filledarray( 'int32' );
@@ -125,7 +128,7 @@ var arr3 = filledarray( 3, arr1, 'int32' );
 Creates a filled array from an iterable.
 
 ```javascript
-import iterConstant from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-constant@esm/index.mjs';
+var iterConstant = require( '@stdlib/iter-constant' );
 
 var it = iterConstant( 3.0, {
     'iter': 3
@@ -142,7 +145,7 @@ var arr2 = filledarray( 1.0, it, 'float32' );
 Returns a filled [typed array][mdn-typed-array] view of an [`ArrayBuffer`][mdn-arraybuffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var buf = new ArrayBuffer( 32 );
 var arr = filledarray( 1.0, buf );
@@ -193,15 +196,10 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real-dtypes@esm/index.mjs';
-import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var dtypes = require( '@stdlib/array-typed-real-dtypes' );
+var filledarray = require( '@stdlib/array-filled' );
 
 // Generate a random number:
 var r = discreteUniform( 0, 100 );
@@ -216,10 +214,6 @@ for ( i = 0; i < dt.length; i++ ) {
     arr = filledarray( r, 10, dt[ i ] );
     console.log( arr );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -258,7 +252,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -327,11 +321,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
 
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
+
 <!-- <related-links> -->
 
-[@stdlib/array/filled-by]: https://github.com/stdlib-js/array-filled-by/tree/esm
+[@stdlib/array/filled-by]: https://github.com/stdlib-js/array-filled-by
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/esm
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
 <!-- </related-links> -->
 
