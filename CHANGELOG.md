@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-07)
+## Unreleased (2025-04-03)
 
 <section class="features">
 
@@ -20,9 +20,9 @@
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#5836](https://github.com/stdlib-js/stdlib/issues/5836)
+[#5836](https://github.com/stdlib-js/stdlib/issues/5836), [#5894](https://github.com/stdlib-js/stdlib/issues/5894)
 
 </section>
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`54534dd`](https://github.com/stdlib-js/stdlib/commit/54534ddb74b35d0b99915f8017ed9d9e692a7502) - **chore:** address commit comments [(#5978)](https://github.com/stdlib-js/stdlib/pull/5978) _(by Jay Soni, Athan Reines, stdlib-bot)_
 -   [`c31eccd`](https://github.com/stdlib-js/stdlib/commit/c31eccd4e752a5647b718df9f3b70739c8a4b45b) - **chore(array):** fix incorrect JSDoc type [(#5844)](https://github.com/stdlib-js/stdlib/pull/5844) _(by Anshu Kumar)_
 -   [`8a55ea2`](https://github.com/stdlib-js/stdlib/commit/8a55ea29ae7cc04e9ebef428ee90900641bbabe1) - **feat:** add boolean dtype support to `array/filled` [(#2471)](https://github.com/stdlib-js/stdlib/pull/2471) _(by Jaysukh Makvana, Athan Reines)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
@@ -48,10 +49,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Anshu Kumar
 -   Athan Reines
+-   Jay Soni
 -   Jaysukh Makvana
 
 </section>
