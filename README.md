@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-filledarray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@umd/browser.js' )
+filledarray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@v0.3.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var filledarray = require( 'path/to/vendor/umd/array-filled/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@v0.3.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -208,7 +208,7 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@v0.3.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
