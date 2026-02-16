@@ -80,7 +80,7 @@
     "@stdlib/complex-float64-ctor": "^0.1.2",
     "@stdlib/iter-constant": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.1",
-    "@stdlib/random-base-discrete-uniform": "^0.2.1",
+    "@stdlib/random-base-discrete-uniform": "^0.2.2",
     "@stdlib/strided-base-reinterpret-complex128": "^0.2.3",
     "@stdlib/strided-base-reinterpret-complex64": "^0.2.2",
     "proxyquire": "^2.0.0",
