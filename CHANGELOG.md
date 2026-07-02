@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-01)
+## Unreleased (2026-07-02)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`7fbca26`](https://github.com/stdlib-js/stdlib/commit/7fbca26c260e75cc31902488cf09f43163a58c17) - **chore:** remove extra space and fix license header [(#13228)](https://github.com/stdlib-js/stdlib/pull/13228) _(by Philipp Burckhardt)_
 -   [`c81fa28`](https://github.com/stdlib-js/stdlib/commit/c81fa285dfb9908737f43e73032197a9c535e7a9) - **feat:** add float16 dtype support to `array/filled` [(#13052)](https://github.com/stdlib-js/stdlib/pull/13052) _(by Gururaj Gurram, Athan Reines)_
 -   [`e487975`](https://github.com/stdlib-js/stdlib/commit/e487975ccd8c36a0c13d3765bac19de5995104d5) - **bench:** refactor to use string interpolation in `array/filled` [(#10321)](https://github.com/stdlib-js/stdlib/pull/10321) _(by Shubham)_
 
@@ -35,10 +36,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
+-   Philipp Burckhardt
 -   Shubham
 
 </section>
